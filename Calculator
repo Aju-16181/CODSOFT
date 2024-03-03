@@ -1,1 +1,13 @@
-
+a=int(input("A:"))
+b=int(input("B:"))
+operation=input("+ or - or * or /:")
+if(operation=="+"):
+    print( "a+b =", a+b)
+elif(operation=="-"):
+    print("a-b =" , a-b)
+elif(operation=="*"):
+    print("a*b =" , a*b)
+elif(operation=="/"):
+    print("a/b =" , a/b)
+else:
+    print("invalid operation")
