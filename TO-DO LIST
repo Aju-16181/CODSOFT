@@ -16,7 +16,7 @@ def listTasks():
 def deleteTask():
   listTasks()
   try:
-    taskToDelete = int(input("Enter the # to delete: "))
+    taskToDelete = int(input("Choose the # to delete: "))
     if taskToDelete >= 0 and taskToDelete < len(tasks):
       tasks.pop(taskToDelete)
       print(f"Task {taskToDelete} has been removed.")
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     print("------------------------------------------")
     print("1. Add a new task")
     print("2. Delete a task")
-    print("3. List tasks")
+    print("3. List all tasks")
     print("4. Quit")
 
     choice = input("Enter your choice: ")
